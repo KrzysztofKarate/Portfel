@@ -42,6 +42,7 @@ public class activity_log extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 // pobieramy wszystkie dane od nowa gdy zostanie wprowadzona zmiana
+                eventLogArrayList.clear();
                 for (DataSnapshot productsSnapshot : dataSnapshot.getChildren()){
                     EventLog mLog = productsSnapshot.getValue(EventLog.class);
                     eventLogArrayList.add(mLog);
