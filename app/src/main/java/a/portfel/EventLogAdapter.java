@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by Damian on 2017-05-17.
+ * Created by Anna on 2017-05-17.
  */
 
 public class EventLogAdapter extends ArrayAdapter<EventLog> {
@@ -22,7 +22,7 @@ public class EventLogAdapter extends ArrayAdapter<EventLog> {
 
     /*
     adapter generuje liste rzeczy ktore maja sie znajdowac w ListView. Tutaj generujemy liste
-    wszystkich produktów
+    wszystkich aktywnosci
     */
 
     EventLogAdapter(Activity context, List<EventLog> mLogs){

@@ -19,12 +19,12 @@ public class activity_log extends AppCompatActivity {
 
     ListView logList;
     TextView txtTitle;
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("logi");
+    FirebaseDatabase database = FirebaseDatabase.getInstance(); //deklarujemy firebase
+    DatabaseReference myRef = database.getReference("logi"); //tworzymy referencje do katalogu "logi"
 
-    ArrayList<EventLog> eventLogArrayList = new ArrayList<>();
+    ArrayList<EventLog> eventLogArrayList = new ArrayList<>(); //lista do przetwarzania danych
 
-    ArrayAdapter adapter;
+    ArrayAdapter adapter;   //adapter
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +33,16 @@ public class activity_log extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        logList = (ListView) findViewById(R.id.log_list);
+        logList = (ListView) findViewById(R.id.log_list); //deklaracja Listy wyświetlania
 
-        // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.addValueEventListener(new ValueEventListener() { //dodajemy nasłuchiwacz zmian
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                // pobieramy wszystkie dane od nowa gdy zostanie wprowadzona zmiana
-                eventLogArrayList.clear();
-                for (DataSnapshot productsSnapshot : dataSnapshot.getChildren()){
-                    EventLog mLog = productsSnapshot.getValue(EventLog.class);
-                    eventLogArrayList.add(mLog);
+            public void onDataChange(DataSnapshot dataSnapshot) { // pobieramy wszystkie dane od nowa gdy zostanie wprowadzona zmiana
+                eventLogArrayList.clear();  //czyścimy listę w przypadku nastąpienia zmiany w bazie by nie dublowało elementów
+
+                for (DataSnapshot productsSnapshot : dataSnapshot.getChildren()){ //w petli pobieramy dane
+                    EventLog mLog = productsSnapshot.getValue(EventLog.class); //tworzymi pojedyncze logi
+                    eventLogArrayList.add(mLog); // dodajemy logi do listy
                 }
 
                 // ponownie generuje listView

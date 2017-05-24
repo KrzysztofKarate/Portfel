@@ -12,7 +12,6 @@ public class EventLog {
         private double kwota;
 
     public EventLog(){
-
     }
 
     public EventLog(double kwota, String data, String tytulem) {

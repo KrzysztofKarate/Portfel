@@ -27,10 +27,6 @@
             android:name=".activity_log"
             android:label="@string/title_activity_log"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".graphs"
-            android:label="@string/title_activity_graphs"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

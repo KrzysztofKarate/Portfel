@@ -55,21 +55,11 @@ public class MainScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //przejscie przyciskiem grapgh button do wykresu stanu konta
-        Button gphbtn = (Button) findViewById(R.id.graph_button);
-        gphbtn.setOnClickListener(new View.OnClickListener(){
-            @Override public void onClick(View view){
-                context = getApplicationContext();
-                Intent intent = new Intent(context, graphs.class);
-                startActivity(intent);
-            }
-        });
-
-        sRef.addValueEventListener(new ValueEventListener() {
+        sRef.addValueEventListener(new ValueEventListener() { // pobieramy wartosci stanu konta
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 try {
-                    ammountText.setText(dataSnapshot.getValue(Double.class) + " zł");
+                    ammountText.setText(dataSnapshot.getValue(Double.class) + " zł"); // ustawiamy tekst stanu konta
                 }catch (Exception e){
                 }
             }
