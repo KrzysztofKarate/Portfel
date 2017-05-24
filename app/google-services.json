@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "449517394459",
+    "firebase_url": "https://portfel-b0967.firebaseio.com",
+    "project_id": "portfel-b0967",
+    "storage_bucket": "portfel-b0967.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449517394459:android:4daf62ee63575da5",
+        "android_client_info": {
+          "package_name": "a.portfel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449517394459-m1hbk9gvu10evl3fhekqea1v6iujc565.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a.portfel",
+            "certificate_hash": "c72dca44c6e0e0c533bde762029844cab3c25252"
+          }
+        },
+        {
+          "client_id": "449517394459-lnjnggpvtl35e6rv5o8kqvsfkgag87iv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a.portfel",
+            "certificate_hash": "2edc7e6243dda24831813b24c23e76b85d526d39"
+          }
+        },
+        {
+          "client_id": "449517394459-c6npdof53p3rkts7orf4mtp22qsj77ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDztGYGiG9UdzBJgne-GyGk7IO56wxn-fc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449517394459-c6npdof53p3rkts7orf4mtp22qsj77ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

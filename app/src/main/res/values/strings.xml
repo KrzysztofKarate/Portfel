@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Portfel</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_event">add_event</string>
+    <string name="title_activity_event_log">event_log</string>
+    <string name="title_activity_log">activity_log</string>
+    <string name="title_activity_graphs">graphs</string>
+</resources>
