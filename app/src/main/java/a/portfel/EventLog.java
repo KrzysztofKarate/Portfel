@@ -6,16 +6,16 @@ import java.util.Date;
  * Created by Krzysztof on 2017-05-23.
  */
 
-public class finan_activ {
+public class EventLog {
         private String tytulem;
         private String data;
         private double kwota;
 
-    public finan_activ(){
+    public EventLog(){
 
     }
 
-    public finan_activ(double kwota, String data, String tytulem) {
+    public EventLog(double kwota, String data, String tytulem) {
         this.kwota = kwota;
         this.data = data;
         this.tytulem = tytulem;
